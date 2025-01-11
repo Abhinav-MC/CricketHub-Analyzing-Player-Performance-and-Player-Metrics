@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cricket Club</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: #FFFFFF; /* White background */
+            font-family: 'Poppins', sans-serif;
+            color: #333333; /* Dark text for better readability */
+        }
+
+        .navbar {
+            background-color: #1B2735;
+            padding: 15px;
+            border-bottom: 2px solid #2DE1FC;
+        }
+
+        .about-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1B2735; /* Dark blue for headings */
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .team-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .team-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1B2735; /* Dark blue for headings */
+        }
+
+        .team-member {
+            margin-bottom: 30px;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 3px solid #2DE1FC; /* Blue border for team member images */
+        }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: #FFC107; /* Yellow for team member names */
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #666666; /* Gray for team member roles */
+        }
+
+        .cricket-icon {
+            font-size: 3rem;
+            color: #FFC107; /* Yellow for cricket icon */
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #666666; /* Gray for footer text */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Custom Navbar -->
+    <nav class="bg-indigo-600 text-white py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold">CricketHub</div>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About Us</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+                <li><a href="trainees.php" class="hover:underline">Trainees</a></li>
+                <li><a href="register.php" class="hover:underline">Sign Up</a></li>
+                <li><a href="user_login.php" class="hover:underline">User Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="cricket-icon">🏏</div>
+        <h2>About Us</h2>
+        <p>
+            Welcome to the Cricket Club, where passion meets the pitch! We are a community of cricket enthusiasts dedicated to promoting the spirit of the game. Whether you're a seasoned player or just starting out, our club offers a welcoming environment for all.
+        </p>
+        <p>
+            Our mission is to foster camaraderie, skill development, and competitive play. We organize regular matches, training sessions, and tournaments to ensure that every member has the opportunity to excel and enjoy the game.
+        </p>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <h2>Our Team</h2>
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="team-member">
+                    <img src="admin/uploads/676c0faf504a9_164441.png" alt="Team Member 1">
+                    <h3>Sachin Tendulkar</h3>
+                    <p>Captain</p>
+                </div>
+                <div class="team-member">
+                    <img src="admin/uploads/6759a9f44db75_young-man-face-cartoon-design-vector-9772843.jpg" alt="Team Member 2">
+                    <h3>Sanjith</h3>
+                    <p>Vice-Captain</p>
+                </div>
+                <div class="team-member">
+                    <img src="admin/uploads/r.jpg" alt="Team Member 3">
+                    <h3>Rahul Dravid</h3>
+                    <p>Coach</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-8">
+        © 2025 Cricket Club 
+    </footer>
+
+</body>
+</html>

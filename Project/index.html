@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CricketHub - Your Cricket Community</title>
+  <style>
+    /* General Styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Background Image */
+    .background-image {
+      background-image: url('a.jpg'); /* Replace 'a.jpg' with your image file name */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh; /* Full viewport height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white; /* Text color on top of the image */
+    }
+
+    /* Content Overlay */
+    .content {
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .content h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .cta-btn {
+      padding: 15px 30px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #007BFF;
+      color: white;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    header .cta-buttons a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header .cta-buttons button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background-color: white;
+      color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* About Section */
+    #about {
+      padding: 50px;
+      text-align: center;
+      background-color: #e9ecef;
+    }
+
+    #about h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    #about p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* Features Section */
+    #features {
+      padding: 50px;
+      background-color: white;
+    }
+
+    #features h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    #features .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    #features .feature {
+      flex: 1 1 100%; /* Full width on mobile */
+      padding: 20px;
+      background-color: #f4f4f4;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    #features .feature h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    #features .feature p {
+      font-size: 16px;
+    }
+
+    /* CTA Section */
+    #cta {
+      padding: 50px;
+      text-align: center;
+      background-color: #007BFF;
+      color: white;
+    }
+
+    #cta h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      text-align: center;
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (min-width: 768px) {
+      /* Adjust header for desktop */
+      header nav ul {
+        gap: 30px;
+      }
+
+      /* Adjust features for desktop */
+      #features .feature {
+        flex: 1 1 calc(50% - 40px); /* Two features per row */
+      }
+    }
+
+    @media (min-width: 1024px) {
+      /* Adjust features for larger screens */
+      #features .feature {
+        flex: 1 1 calc(25% - 40px); /* Four features per row */
+      }
+
+      /* Adjust content font size for larger screens */
+      .content h1 {
+        font-size: 48px;
+      }
+
+      .content p {
+        font-size: 24px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      /* Adjust header for mobile */
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      header .cta-buttons {
+        margin-top: 10px;
+      }
+
+      /* Adjust features for mobile */
+      #features .feature-list {
+        flex-direction: column;
+      }
+
+      /* Adjust content font size for mobile */
+      .content h1 {
+        font-size: 28px;
+      }
+
+      .content p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CricketHub</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="trainees.php">Trainees</a></li>
+      </ul>
+    </nav>
+    <div class="cta-buttons">
+      <a href="register.php"><button class="signup-btn">Sign Up</button></a>
+      <a href="user_login.php"><button class="login-btn">User Login</button></a>
+    </div>
+  </header>
+  <div class="background-image">
+    <div class="content">
+      <h1>Empowering Cricket Enthusiasts and Professionals</h1>
+      <p>Join CricketHub to connect, learn, and grow in the world of cricket.</p>
+    </div>
+  </div>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About CricketHub</h2>
+    <p>CricketHub is the ultimate platform for cricket enthusiasts, trainers, and professionals. Whether you're looking to improve your skills, connect with like-minded individuals, or grow your cricket business, we've got you covered.</p>
+    <button class="cta-btn"><a href="about.html">Learn More About Us</a></button>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Our Features</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <h3>Connect with Trainees and Coaches</h3>
+        <p>Find the right coach or trainee to help you achieve your cricket goals.</p>
+      </div>
+      <div class="feature">
+        <h3>Smart Training Programs</h3>
+        <p>Access personalized training programs designed by top cricket professionals.</p>
+      </div>
+      <div class="feature">
+        <h3>Community Engagement</h3>
+        <p>Join a vibrant community of cricket lovers and share your passion.</p>
+      </div>
+      <div class="feature">
+        <h3>Analytics and Progress Tracking</h3>
+        <p>Track your progress and performance with our advanced analytics tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section id="cta">
+    <h2>Ready to Take Your Cricket Journey to the Next Level?</h2>
+    <h2>Join the Academy and see the difference in You</h2>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CricketHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
